@@ -12,7 +12,7 @@ app.listen(PORT,() => {
 
 app.use(cors())
 app.get('/flights',(req,res) => {
-  var data = JSON.parse(fs.readFileSync('data.json').toString())
+  var data = JSON.parse(fs.readFileSync('flight-data.json').toString())
   res.json(data)
 })
 
@@ -27,7 +27,7 @@ app.get(`/flights&origin=:origin&destination=:destination&year=:year&month=:mont
   var destination = req.params.destination;
   var year = Number(req.params.year)
   var month = Number(req.params.month)
-  var data = JSON.parse(fs.readFileSync('data.json').toString())
+  var data = JSON.parse(fs.readFileSync('flight-data.json').toString())
   var flightsFound = []
   var possibleFlights = []
   for(var flight in data){
