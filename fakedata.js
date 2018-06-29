@@ -25,4 +25,5 @@ var flights = dataFaker.schema([{
 
 
 console.log(flights)
+//after the data is created by the data faker, its being saved in the json file
 fs.writeFile('flight-data.json', JSON.stringify(flights,null,4));
