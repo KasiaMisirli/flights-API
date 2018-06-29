@@ -4,8 +4,8 @@ dataFaker.set("origin", ["Melbourne", "Sydney", "Perth", "Canberra", "Newcastle"
 dataFaker.set("destination", ["Melbourne", "Sydney", "Perth", "Canberra", "Newcastle", "Brisbane","Adelaide","Gold Coast","Darwin","Hobart"]);
 
 dataFaker.set("day",[1,30],{range:true, unique: true});
-dataFaker.set("month",[7,9],{range:true, unique: true});
-dataFaker.set("year",[2018,2018],{range:true, unique: true});
+dataFaker.set("month",[1,7],{range:true, unique: true});
+dataFaker.set("year",[2019,2019],{range:true, unique: true});
 dataFaker.set("price",[69,600], {range: true, unique: true});
 
 var flights = dataFaker.schema([{
@@ -16,7 +16,7 @@ var flights = dataFaker.schema([{
     year: "year",
     price: "price",
     currency: "AUD"
-}, 500]);
+}, 100]);
 
 
 console.log(flights)
