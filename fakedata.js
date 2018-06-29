@@ -21,7 +21,7 @@ var flights = dataFaker.schema([{
     currency: "AUD",
     hour: "hour",
     minute: "minute"
-}, 1000]);
+}, 10000]);
 
 
 console.log(flights)
