@@ -5,10 +5,10 @@ This is an flights API (Australia only) that I have created to access with my [F
 ## Access
 
 Can be accesses with below url:
-````https://flight-api-mbynoyjqmf.now.sh/flights```
+```https://flight-api-mbynoyjqmf.now.sh/flights```
 
 To be able to pass in data in Node.js aplication, please bee below link:
-````https://flight-api-mbynoyjqmf.now.sh/flights&origin=${this.state.origin}&destination=${this.state.destination}&year=${this.state.year}&month=${this.state.month}&day=${this.state.day}```
+```https://flight-api-mbynoyjqmf.now.sh/flights&origin=${this.state.origin}&destination=${this.state.destination}&year=${this.state.year}&month=${this.state.month}&day=${this.state.day}```
 This: 
 ```${this.state.origin}``` must be replaced with a city name etc.
 
