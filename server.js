@@ -29,7 +29,7 @@ app.get(`/flights&origin=:origin&destination=:destination&year=:year&month=:mont
   var bestFlight = []
  
    for(var flight in data){
-    if(data[flight]["origin"] == origin && data[flight]["destination"] == destination && data[flight]   ["year"] == year && data[flight]["month"] == month && data[flight]["day"] > day){
+    if(data[flight]["origin"] == origin && data[flight]["destination"] == destination && data[flight]["year"] == year && data[flight]["month"] == month && data[flight]["day"] > day){
       bestFlight.push(data[flight])
     }
   }
